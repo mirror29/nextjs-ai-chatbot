@@ -4,6 +4,7 @@ import {
   wrapLanguageModel,
 } from 'ai';
 import { openai } from '@ai-sdk/openai';
+import { createDeepSeek } from '@ai-sdk/deepseek';
 import { fireworks } from '@ai-sdk/fireworks';
 import { isTestEnvironment } from '../constants';
 import {
@@ -12,6 +13,10 @@ import {
   reasoningModel,
   titleModel,
 } from './models.test';
+
+const deepseek = createDeepSeek({
+  apiKey: process.env.DEEPSEEK_API_KEY ?? '',
+});
 
 export const myProvider = isTestEnvironment
   ? customProvider({
