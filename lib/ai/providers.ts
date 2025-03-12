@@ -4,8 +4,6 @@ import {
   wrapLanguageModel,
 } from "ai";
 import { fireworks } from "@ai-sdk/fireworks";
-import { isTestEnvironment } from "../constants";
-import { reasoningModel } from "./models.test";
 
 export const myProvider = customProvider({
   languageModels: {
