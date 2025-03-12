@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { motion } from "framer-motion";
+import Link from "next/link";
 
-import { MessageIcon, VercelIcon } from './icons';
+import { MessageIcon, VercelIcon } from "./icons";
 
 export const Overview = () => {
   return (
@@ -20,31 +20,23 @@ export const Overview = () => {
           <MessageIcon size={32} />
         </p>
         <p>
-          This is an{' '}
-          <Link
-            className="font-medium underline underline-offset-4"
-            href="https://github.com/vercel/ai-chatbot"
-            target="_blank"
-          >
-            open source
-          </Link>{' '}
-          chatbot template built with Next.js and the AI SDK by Vercel. It uses
-          the{' '}
-          <code className="rounded-md bg-muted px-1 py-0.5">streamText</code>{' '}
-          function in the server and the{' '}
+          一个基于{" "}
+          <code className="rounded-md bg-muted px-1 py-0.5">Next.js</code>15 +{" "}
+          <code className="rounded-md bg-muted px-1 py-0.5">ShadcnUI</code> +{" "}
           <code className="rounded-md bg-muted px-1 py-0.5">useChat</code> hook
-          on the client to create a seamless chat experience.
+          开发的的 AI 聊天机器人，使用
+          <code className="rounded-md bg-muted px-1 py-0.5">DeepSeek</code>
+          开源模型。
         </p>
         <p>
-          You can learn more about the AI SDK by visiting the{' '}
+          You can find this project on{" "}
           <Link
             className="font-medium underline underline-offset-4"
-            href="https://sdk.vercel.ai/docs"
+            href="https://github.com/mirror29/nextjs-ai-chatbot"
             target="_blank"
           >
-            docs
+            Github.
           </Link>
-          .
         </p>
       </div>
     </motion.div>

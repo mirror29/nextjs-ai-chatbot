@@ -1,4 +1,4 @@
-export const DEFAULT_CHAT_MODEL: string = 'chat-model-small';
+export const DEFAULT_CHAT_MODEL: string = "deepseekv";
 
 interface ChatModel {
   id: string;
@@ -8,18 +8,13 @@ interface ChatModel {
 
 export const chatModels: Array<ChatModel> = [
   {
-    id: 'chat-model-small',
-    name: 'Small model',
-    description: 'Small model for fast, lightweight tasks',
+    id: "deepseekv",
+    name: "DeepSeek-V3",
+    description: "DeepSeek-v3 对话机器人",
   },
   {
-    id: 'chat-model-large',
-    name: 'Large model',
-    description: 'Large model for complex, multi-step tasks',
-  },
-  {
-    id: 'chat-model-reasoning',
-    name: 'Reasoning model',
-    description: 'Uses advanced reasoning',
+    id: "deepseekr",
+    name: "DeepSeek-R1",
+    description: "DeepSeek-R1 深度思考",
   },
 ];
