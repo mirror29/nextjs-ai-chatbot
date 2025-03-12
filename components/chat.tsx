@@ -54,10 +54,18 @@ export function Chat({
     },
   });
 
-  const { data: votes } = useSWR<Array<Vote>>(
-    `/api/vote?chatId=${id}`,
-    fetcher
-  );
+
+  // TODO: 暂时隐藏后续修改相关逻辑
+  // const { data: votes } = useSWR<Array<Vote>>(
+  //   `/api/vote?chatId=${id}`,
+  //   fetcher
+  // );
+
+  const votes: {
+    chatId: string;
+    messageId: string;
+    isUpvoted: boolean;
+  }[] = [];
 
   const [attachments, setAttachments] = useState<Array<Attachment>>([]);
   const isArtifactVisible = useArtifactSelector((state) => state.isVisible);
